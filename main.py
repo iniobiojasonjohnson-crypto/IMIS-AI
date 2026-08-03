@@ -5,6 +5,8 @@ from config import (
 )
 
 from utils.logger import log
+from database.db import Database
+from engines.data_engine import DataEngine
 
 
 def startup():
@@ -16,6 +18,12 @@ def startup():
     log.info("Institutional Market Intelligence System")
 
     log.info("=" * 60)
+
+    db = Database()
+    data = DataEngine()
+
+    log.info("Database Loaded")
+    log.info("Data Engine Loaded")
 
     log.info("Watching Symbols:")
 
@@ -36,3 +44,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+    
