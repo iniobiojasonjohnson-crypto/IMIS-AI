@@ -1,1 +1,13 @@
-
+MetaTrader5>=5.0.45
+pandas>=2.2.2
+numpy>=1.26.4
+pyarrow>=16.1.0
+python-dotenv>=1.0.1
+loguru>=0.7.2
+pydantic>=2.8.2
+xgboost>=2.1.0
+scikit-learn>=1.5.1
+plotly>=5.23.0
+fastapi>=0.111.1
+uvicorn>=0.30.3
+python-telegram-bot>=21.4
